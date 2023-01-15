@@ -12,3 +12,6 @@ rm -rf $tempdir
 echo ---------------------------------------------------------------
 echo $(date) " Updating FHEMApp is finished."
 echo ---------------------------------------------------------------
+sudo chmod 777 update.sh 
+sudo chown fhem:dialout cfg/*.json
+sudo chmod 666 cfg/*.json
