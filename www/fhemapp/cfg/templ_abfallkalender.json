@@ -1,0 +1,19 @@
+{
+  "name": "abfallkalender",
+  "author": "guwo",
+  "date": "2022-01-14",
+  "status": {
+    "bar": [],
+    "error": []
+  },
+  "main": [
+    {
+      "text": ["next_text::%s"]
+    }
+  ],
+  "info": {
+    "left1": ["state:::mdi-trash-can-outline"],
+    "mid1": ["next_weekday::%s"],
+    "mid2": ["next_date::%s"]
+  }
+}

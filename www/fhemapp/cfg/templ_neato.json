@@ -1,0 +1,25 @@
+{
+  "name": "neato",
+  "author": "guwo",
+  "date": "2022-01-14",
+  "status": {
+    "bar": ["state:on:100:success","state:off:0:success"],
+    "error": ["Connected.receiver.Readings.Activity.Value:^(?!alive):100:error:keine Verbindung"]
+  },
+  "main": [
+    {
+      "leftBtn": "mdi-home",
+      "leftClick": ["state::sendToBase"],
+      "text": ["state::%s"],
+      "rightBtn": "mdi-gesture",
+      "rightClick": ["state::startCleaning House"]
+    }
+  ],
+  "info": {
+    "left1": ["state:Idle::mdi-home","state:::mdi-gesture"],
+    "left2": ["batteryPercent:0.1:%n.0%"],
+    "mid1": ["cleaningCategory::%s"],
+    "mid2": ["cleaningMode::%s:"],
+    "right2": ["Connected.receiver.Readings.Activity.Value:alive::mdi-wifi", "Connected.receiver.Readings.Activity.Value:::mdi-wifi-off"]
+  }
+}

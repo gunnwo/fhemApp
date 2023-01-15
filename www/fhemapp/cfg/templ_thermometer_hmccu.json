@@ -1,0 +1,21 @@
+{
+  "name": "thermometer_hmccu",
+  "author": "guwo",
+  "date": "2022-01-14",
+  "status": {
+    "bar": [],
+    "error": ["activity:^(?!alive):100:error:keine Verbindung"]
+  },
+  "main": [
+    {
+      "text": ["measured-temp::%n.1°C"],
+      "text2": ["humidity::%n%"]
+    }
+  ],
+  "info": {
+    "left1": ["measured-temp:0::mdi-thermometer","temperature:::mdi-snowflake"],
+    "mid1": ["Readings.state.Time::%t"],
+    "right1": ["battery:ok::mdi-battery","battery:::mdi-battery-10"],
+    "right2": ["activity:alive::mdi-wifi","activity:::mdi-wifi-off"]
+  }
+}
