@@ -1,6 +1,6 @@
 {
-  "name": "motiondetect_hmccu",
-  "author": "guwo",
+  "name": "motiondetect2",
+  "author": "jemu75",
   "date": "2021-03-21",
   "status": {
     "bar": ["motion:noMotion:0:success","motion::100:success"],

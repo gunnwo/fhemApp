@@ -1,0 +1,28 @@
+{
+  "name": "thermostat_hmccu",
+  "author": "guwo",
+  "date": "2022-01-14",
+  "description": "HmIP-RF",
+  "status": {
+    "error": ["activity.Value:^(?!alive):100:error:keine Verbindung"]
+  },
+  "main": [
+    {
+      "leftBtn": "mdi-minus",
+      "leftClick": ["desired-temp:15:desired-temp %i-0.5","desired-temp::"],
+      "leftLong": ["R-nightTemp::desired-temp %n.1"],
+      "text": ["desired-temp:off:aus", "desired-temp::%n.1°C"],
+      "rightBtn": "mdi-plus",
+      "rightClick": ["desired-temp:25:","desired-temp::desired-temp %i0.5"],
+      "rightLong": ["BOOST_MODE:true:"]
+    }
+  ],
+  "info": {
+    "left1": ["BOOST_MODE:true::mdi-fireplace", "FROST_PROTECTION:true::mdi-snowflake-thermometer", "PARTY_MODE:true::mdi-balloon"],
+    "left2": ["SET_POINT_MODE:auto::mdi-clock-time-four-outline", "SET_POINT_MODE:manual::mdi-hand-back-right-outline", "CONTROL_MODE:AUTO-MODE::mdi-clock-time-four-outline", "CONTROL_MODE:MANU-MODE::mdi-hand-back-right-outline", "CONTROL_MODE:BOOST-MODE::mdi-fireplace"],
+    "mid1": ["measured-temp::%n.1°C:mdi-thermometer"],
+    "mid2": ["humidity::%n%:mdi-water"],
+    "right1": ["battery:ok::mdi-battery","battery:::mdi-battery-10"],
+    "right2": ["activity:alive::mdi-wifi","activity:::mdi-wifi-off"]
+  }
+}

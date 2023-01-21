@@ -1,0 +1,27 @@
+{
+  "name": "shutter_hmccu",
+  "author": "guwo",
+  "date": "2022-01-17",
+  "status": {
+    "bar": ["pct::%n:success:invert"],
+    "error": []
+  },
+  "main": [
+    {
+      "leftBtn": "mdi-chevron-down",
+      "leftClick": ["state::close"],
+      "leftLong": ["state::stop"],
+      "leftLongRelease": ["motor::stop"],
+      "text": ["state:open:offen", "state:closed:geschlossen", "state::%s%"],
+      "rightBtn": "mdi-chevron-up",
+      "rightClick": ["state::open"],
+      "rightLong": ["state::stop"],
+      "rightLongRelease": ["motor::stop"]
+    }
+  ],
+  "info": {
+    "left1": ["motor:up::mdi-window-shutter-alert","motor:down::mdi-window-shutter-alert","state:open::mdi-window-shutter-open","pct:::mdi-window-shutter"],
+    "right1": ["battery:ok::mdi-battery","battery:::mdi-battery-10"],
+    "right2": ["activity:alive::mdi-wifi","activity:::mdi-wifi-off"]
+  }
+}

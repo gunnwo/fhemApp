@@ -2,7 +2,7 @@
   "options": {
     "maxChartPoints": 300,
     "logBuffer": 500,
-    "debugMode": true
+    "debugMode": false
   },
   "theme": {
     "dark": true,

@@ -1,0 +1,23 @@
+{
+  "name": "switch_hmccu",
+  "author": "guwo",
+  "date": "2022-01-14",
+  "status": {
+    "bar": ["state:on:100:success","state:off:0:success"],
+    "error": ["activity:^(?!alive):100:error:keine Verbindung"]
+  },
+  "main": [
+    {
+      "leftBtn": "mdi-power-off",
+      "leftClick": ["state::off"],
+      "text": ["state:on:an","state:off:aus","state::%s"],
+      "rightBtn": "mdi-power-on",
+      "rightClick": ["state::on"]
+    }
+  ],
+  "info": {
+    "left1": ["state:on::mdi-power-plug","state:off::mdi-power-plug-off"],
+    "left2": ["power::%n.2W"],
+    "right2": ["activity:alive::mdi-wifi","activity:::mdi-wifi-off"]
+  }
+}

@@ -8,7 +8,8 @@
   },
   "main": [
     {
-      "text": ["next_text::%s"]
+      "text": ["next_date::%s"],
+      "text2": ["next_text::%s"]
     }
   ],
   "info": {
