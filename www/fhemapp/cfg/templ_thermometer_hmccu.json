@@ -13,7 +13,7 @@
     }
   ],
   "info": {
-    "left1": ["measured-temp:0::mdi-thermometer","temperature:::mdi-snowflake"],
+    "left1": ["measured-temp:0::mdi-thermometer","measured-temp:::mdi-snowflake"],
     "mid1": ["Readings.state.Time::%t"],
     "right1": ["battery:ok::mdi-battery","battery:::mdi-battery-10"],
     "right2": ["activity:alive::mdi-wifi","activity:::mdi-wifi-off"]
