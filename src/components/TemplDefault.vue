@@ -101,12 +101,23 @@
                       <v-btn
                         small
                         icon
+                        :color="level.leftBtnColor"
+                        :disabled="level.leftBtnDisabled"
                         v-bind="attrs"
                         v-on="on"
                       >
+                      <div v-if="level.slider">
+                        <v-icon>
+                          {{ level.leftBtn }}
+                        </v-icon>
+                      </div>                        
+
+                      <div v-if="!level.slider">
                         <v-icon large>
                           {{ level.leftBtn }}
                         </v-icon>
+                      </div>                        
+
                       </v-btn>
                     </template>
 
@@ -205,6 +216,8 @@
                         v-if="!level.text"
                         small
                         icon
+                        :disabled="level.midBtnDisabled"
+                        :color="level.midBtnColor"
                         v-bind="attrs"
                         v-on="on"
                       >
@@ -312,12 +325,23 @@
                       <v-btn
                         small
                         icon
+                        :disabled="level.rightBtnDisabled"
+                        :color="level.rightBtnColor"
                         v-bind="attrs"
                         v-on="on"
                       >
+
+                      <div v-if="level.slider">
+                        <v-icon>
+                          {{ level.rightBtn }}
+                        </v-icon>
+                      </div>                        
+
+                      <div v-if="!level.slider">
                         <v-icon large>
                           {{ level.rightBtn }}
                         </v-icon>
+                      </div>                        
                       </v-btn>
                     </template>
 
